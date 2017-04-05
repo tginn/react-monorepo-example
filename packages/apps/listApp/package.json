@@ -1,0 +1,27 @@
+{
+  "name": "@example/listApp",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "NODE_ENV=production webpack -p",
+    "watch": "NODE_ENV=dev webpack --watch",
+    "start": "webpack-dev-server --content-base dist/",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@example/item": "0.0.0",
+    "@example/core": "0.0.0",
+    "@example/redux-sdk": "0.0.0",
+    "react": "15.4.2",
+    "react-dom": "15.4.2",
+    "react-redux": "5.0.3",
+    "redux": "3.6.0",
+    "underscore": "1.8.3"
+  },
+  "devDependencies": {
+    "@example/builds": "0.0.0",
+    "extract-text-webpack-plugin": "2.1.0",
+    "webpack": "2.3.3",
+    "webpack-dev-server": "2.4.2"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "lerna": "2.0.0-beta.38",
+  "packages": [
+    "packages/sdk/*",
+    "packages/apps/*",
+    "packages/builds",
+    "packages/adapter"
+  ],
+  "version": "0.0.0",
+  "npmClient": "yarn"
+}
