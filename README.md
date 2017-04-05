@@ -55,11 +55,11 @@ dist/
 ```
         
 ### Builds
-The `builds` package contains reusable webpack configurations, reducing 
+The `builds` package contains reusable configuration for build tools, reducing 
 boilerplate and ensuring consistency across packages. App packages 
-should use the `appConfig` builder function to generate their config. 
-All other package's config should start with `baseConfig` (`appConfig` 
-already includes the base configuration).     
+built with webpack should use the builder exported from `webpack/app.config` to generate their config. 
+All other packages using webpack should start with `webpack/common.config` (`app.config` 
+already includes the common configuration).     
 
 ## Develop
 Each SDK package should use `peerDependencies` in place of `dependencies` 
